@@ -26,7 +26,7 @@ public class PlayerController{
 
     @GetMapping("/players") 
     public ArrayList<Player> getPlayers(){ 
-        return playerService.getPlayers()
+        return playerService.getPlayers();
 
     }  
 
@@ -39,7 +39,7 @@ public class PlayerController{
 
     @PostMapping("/players") 
     public Player addPlayer(@RequestBody Player player){
-        return playerService.addPlayer(player)
+        return playerService.addPlayer(player);
 
     } 
 
@@ -48,13 +48,13 @@ public class PlayerController{
     @PutMapping("/players/{playerId}") 
 
     public Player updatePlayer(@PathVariable("playerId") int playerId, @RequestBody Player player){ 
-        return playerService.updatePlayer(playerId,player)
+        return playerService.updatePlayer(playerId,player);
 
     }  
 
     @DeleteMapping("players/{playerId}") 
     public void deletePlayer(@PathVariable int playerId){
-         playerService.deletePlayer(playerId)
+         playerService.deletePlayer(playerId);
 
     }
 

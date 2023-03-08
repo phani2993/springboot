@@ -20,7 +20,7 @@ public class Player{
     } 
 
     public void setPlayerId(int playerId){
-        this.playerId=playerId
+        this.playerId=playerId;
     } 
 
     public String getPlayerName(){
